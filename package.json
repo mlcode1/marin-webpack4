@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha",
-    "eslint": "eslint ./lib --fix"
+    "eslint": "eslint ./lib --fix",
+    "build": "webpack --config ./node_modules/marin-webpack4/lib/webpack.prod.js",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --config ./node_modules/marin-webpack4/lib/webpack.dev.js --open",
+    "build:ssr": "webpack --config ./node_modules/marin-webpack4/lib/webpack.ssr.js"
   },
   "keywords": [],
   "author": "",
